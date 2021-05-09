@@ -1,0 +1,12 @@
+.roomsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: calc(100vh - 7rem);
+    width: 30vh;
+    margin: 4rem auto 1rem 1rem;
+    .room{
+        width: 100%;
+        background-color: blue;
+    }
+}

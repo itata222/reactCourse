@@ -1,0 +1,93 @@
+.headline{
+    background: #ccc;
+}
+
+.mouse-div{
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    outline: 5px solid black;
+    padding: 10px;
+}
+
+.blue{
+    background: blue;
+}
+
+.yellow{
+    background: yellow;
+}
+
+.red{
+    background: red;
+}
+
+.green{
+    background: green;
+}
+
+.div-show{
+    width: 100px;
+    height: 100px;
+    background: purple;
+    color: white;
+    margin: 20px auto;
+}
+
+.square{
+    width: 75px;
+    height: 75px;
+    border: 10px solid orange;
+}
+
+.circle {
+    width: 75px;
+    height: 75px;
+    border: 10px solid purple;
+    border-radius: 50%;
+}
+
+.input-invalid{
+    border: 2px solid red;
+}
+
+.div-warning{
+    color: red;
+    font-size: 0.75rem;
+}
+
+.display-inline-block{
+    display: inline-block;
+}
+
+.board{
+    width: 80vh;
+    height: 80vh;
+    outline: 5px solid black;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+%square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square-white{
+    @extend %square;
+    background: white;
+}
+
+.square-black{
+    @extend %square;
+    background: black;
+}
+
+.piece{
+    background: blue;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+}
