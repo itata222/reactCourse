@@ -71,3 +71,11 @@
     color: $myBlue;
   }
 }
+
+.error-message {
+  color: $myRed;
+  background: #ccc;
+  border-radius: 5px;
+  padding: 0.5rem;
+  text-align: center;
+}

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
@@ -11,8 +10,8 @@ const Article = (props) => {
     };
     return (
         <div>
-            <h1>Article: {props.match.params.name}</h1>
-            <button onClick={onClickButton}>To Articles</button>
+            <h1>Article: { props.match.params.name }</h1>
+            <button onClick={ onClickButton }>To Articles</button>
         </div>
     );
 };

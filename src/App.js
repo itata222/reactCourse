@@ -2,27 +2,18 @@ import React from "react";
 // import RouterExmple from "./react-tutorial-playground/rouer-example/RouterExample";
 import Header from "./components/main/Header";
 import Footer from "./components/main/Footer";
-import Rooms from './components/rooms/Rooms';
-import PageNotFound from './components/pageNotFound/PageNotFound';
-import LoginPage from "./components/login/LoginPage";
+// import LoginPage from "./components/login/LoginPage";
 import Chatroom from "./components/chatroom/Chatroom";
-import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 
 
 const App = () => (
-	<BrowserRouter>
+	<div>
 		<Header />
-		<Switch>
-			<Route path='/' exact>
-				<Redirect to="/home" />
-			</Route>
-			<Route path='/home' component={Chatroom}></Route>
-			<Route path='/rooms' component={Rooms}></Route>
-			<Route path='/login' component={LoginPage}></Route>
-			<Route path='*' component={PageNotFound}></Route>
-		</Switch>
+		{/* <LoginPage /> */ }
+		<Chatroom />
 		<Footer />
-	</BrowserRouter>
+		{/* <RouterExmple /> */ }
+	</div>
 );
 
 export default App;
